@@ -1,16 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.8c3fdba0.css",
-    "main.js": "/static/js/main.34b47389.js",
+    "main.css": "/static/css/main.ce9732f0.css",
+    "main.js": "/static/js/main.86360f34.js",
     "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.6ba57992fd1c89ee5541.jpg",
     "static/media/page_3C.png": "/static/media/page_3C.1f4d4e8a32b4f8f1ee1e.png",
-    "static/media/Fenryr.png": "/static/media/Fenryr.0ff2545cea422330154d.png",
     "static/media/Thug_Moves2.png": "/static/media/Thug_Moves2.28662f41a11182407731.png",
+    "static/media/CK_SwordSlash.png": "/static/media/CK_SwordSlash.2a94a62867d076c26a8b.png",
     "static/media/CK_WhipSlash2.png": "/static/media/CK_WhipSlash2.68caf865c7bc78f943f8.png",
-    "static/media/SkySniper.png": "/static/media/SkySniper.64be46f302004c4a6bfe.png",
     "static/media/Thug_Rifle.png": "/static/media/Thug_Rifle.c61cd931994c64e92f4d.png",
-    "static/media/RinerisF.png": "/static/media/RinerisF.46758ef76fc4d54e5dd8.png",
     "static/media/Thug_Moves1.png": "/static/media/Thug_Moves1.24fa4ab053f55f2d4db9.png",
     "static/media/Thug_1.png": "/static/media/Thug_1.0be97be0d06836f66da5.png",
     "static/media/Thug_MiniGun.png": "/static/media/Thug_MiniGun.5d024729b72b97f08a86.png",
@@ -20,21 +18,24 @@
     "static/media/Thug_Grenade.png": "/static/media/Thug_Grenade.cfa132081b146428b46c.png",
     "static/media/Thug_Pistol.png": "/static/media/Thug_Pistol.1bd50687f7d26594172f.png",
     "static/media/Thug_Shotgun.png": "/static/media/Thug_Shotgun.b0981e5972c75c23c0ab.png",
-    "static/media/Crimson_Kaizer.png": "/static/media/Crimson_Kaizer.da44b150315109b7ee56.png",
-    "static/media/CK_SwordSlash.png": "/static/media/CK_SwordSlash.0cf6d54101321ca55e7d.png",
     "static/media/Rineris_Moves.png": "/static/media/Rineris_Moves.8154538848555496ea77.png",
-    "static/media/Reyi.png": "/static/media/Reyi.ce069138d3737f39baff.png",
+    "static/media/Fenryr.png": "/static/media/Fenryr.97ae63fe50f75afd8b74.png",
+    "static/media/SkySniper.png": "/static/media/SkySniper.545a4fc766bf78f0564a.png",
+    "static/media/RinerisF.png": "/static/media/RinerisF.ca6fb5a21ae5c598a7ca.png",
     "static/media/CK_WhipSlash.png": "/static/media/CK_WhipSlash.938ded3553a774ff9c32.png",
+    "static/media/Crimson_Kaizer.png": "/static/media/Crimson_Kaizer.8f345e228a5e0a4e86c2.png",
     "static/media/DGP_Banner.jpg": "/static/media/DGP_Banner.ec1d981174d664aea0e7.jpg",
-    "static/media/CK_Headshot.png": "/static/media/CK_Headshot.6691273853e433dcdfc0.png",
+    "static/media/Reyi.png": "/static/media/Reyi.37cacbe7f971d0997642.png",
+    "static/media/CK_Headshot.png": "/static/media/CK_Headshot.19c48fa9c03e9c9287ee.png",
+    "static/media/DGP_Av.jpg": "/static/media/DGP_Av.f004b22de506f1037e65.jpg",
     "static/media/logo_stroke.png": "/static/media/logo_stroke.dd5a181ce875ae143ac3.png",
     "index.html": "/index.html",
-    "main.8c3fdba0.css.map": "/static/css/main.8c3fdba0.css.map",
-    "main.34b47389.js.map": "/static/js/main.34b47389.js.map",
+    "main.ce9732f0.css.map": "/static/css/main.ce9732f0.css.map",
+    "main.86360f34.js.map": "/static/js/main.86360f34.js.map",
     "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c3fdba0.css",
-    "static/js/main.34b47389.js"
+    "static/css/main.ce9732f0.css",
+    "static/js/main.86360f34.js"
   ]
 }

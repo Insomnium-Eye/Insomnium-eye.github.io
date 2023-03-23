@@ -59,16 +59,14 @@ const modalStyle = {
     justifyContent: 'center',
     alignItems: 'center',
     zIndex: 2,
-    maxWidth: '90%',
-    maxHeight: '90%',
+    maxWidth: '100%',
+    maxHeight: '100%',
 };
 
 const imageStyle = {
     maxWidth: '100%',
     maxHeight: '100%',
     objectFit: 'contain',
-    paddingBottom: '100px',
-    paddingTop: '250px',
 };
 
 const arrowStyle = {

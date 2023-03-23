@@ -67,6 +67,8 @@ const imageStyle = {
     maxWidth: '100%',
     maxHeight: '100%',
     objectFit: 'contain',
+    paddingBottom: '100px',
+    paddingTop: '250px',
 };
 
 const arrowStyle = {
@@ -75,9 +77,8 @@ const arrowStyle = {
     transform: 'translateY(-50%)',
     cursor: 'pointer',
     fontSize: '3rem',
-    color: '#fff',
+    color: 'red',
     zIndex: 3,
-    border: '2px solid black',
 };
 
 

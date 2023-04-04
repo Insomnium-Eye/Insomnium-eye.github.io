@@ -17,7 +17,7 @@ height: 100%;
 }
 
 .header {
-position: fixed;
+position: sticky;
 top: 0;
 left: 0;
 right: 0;
@@ -34,22 +34,121 @@ height: 60px;
 list-style: none;
 margin: 0;
 padding: 0;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+width: 100%;
+padding-right: 20px;
 }
 
 .header ul li {
 display: inline-block;
 margin-right: 10px;
+padding-left: 10px;
 }
 
 .header ul li a {
 color: white;
 }
 
+.dropDown{
+  display: none;
+  overflow: hidden;
+}
+
+.dropButton{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  position: absolute;
+  z-index: 1;
+  display: none;
+  min-width: 160px;
+  padding: 12px 16px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  right: 0;
+}
+
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .dropDown{
+    display: block;
+  }
+
+  .header ul {
+    display: none;
+    flex-direction: column;
+    padding-right: 0;
+    justify-content: space-around;
+    height: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+
+  .header ul.active {
+    display: flex;
+  }
+
+  .header ul li {
+    margin: 10px;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header {
+    height: 50px;
+    padding: 0 10px;
+  }
+
+  .header ul li a {
+    display: block;
+    padding: 10px 0;
+  }
+
+  .content {
+    top: 130px;
+    padding: 20px;
+  }
+}
+
+.menu-item:hover .dropdown-menu {
+  display: block;
+}
+
 .content {
-position: fixed;
-top: 500px;
-left: 50%;
-transform: translate(-50%, -50%);
+position: relative;
+top: 80px;
 text-align: center;
 color: white;
 background-color: transparent;
@@ -61,20 +160,6 @@ margin: 0 auto;
 padding: 50px;
 }
 
-.content-contact {
-    position: absolute;
-    top: 100px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    background-color: transparent;
-    border-style: unset;
-    box-shadow: 0px 0px 5px black;
-    background: rgba(50, 40, 70, 0.7);
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 50px;
-    height: 800px;
+.dropdown-content.show {
+  display: block;
 }
-  

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Gallery from './Gallery';
+import Gallery from './GalleryDiv';
 
 function Modal(props) {
     if (!props.isOpen) {

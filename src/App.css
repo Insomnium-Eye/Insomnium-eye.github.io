@@ -1,165 +1,305 @@
-@import './css/Modal.css';
+/* App.css (Updated to remove the problematic @import for Modal.css and add modal styles) */
+/* Remove or comment out: @import './css/Modal.css'; */
 
-ul li a {
-color: white;
+/* Add these global styles at the top of App.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden; /* Prevents scrolling on the entire page */
 }
 
 .background {
-background-image: url('./images/bg.jpg');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center center;
-position: fixed;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
+    background-image: url('./images/bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed; /* Ensures the background remains fixed */
+    position: fixed; /* Locks the container to the viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Stacks header and content vertically */
+    overflow: hidden; /* No overflow allowed on the background container */
 }
 
 .header {
-position: sticky;
-top: 0;
-left: 0;
-right: 0;
-background-color: rgba(0, 0, 0, 0.8);
-z-index: 1;
-display: flex;
-align-items: center;
-justify-content: space-between;
-padding: 0 20px;
-height: 60px;
-}
-
-.header ul {
-list-style: none;
-margin: 0;
-padding: 0;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-width: 100%;
-padding-right: 20px;
-}
-
-.header ul li {
-display: inline-block;
-margin-right: 10px;
-padding-left: 10px;
-}
-
-.header ul li a {
-color: white;
-}
-
-.dropDown{
-  display: none;
-  overflow: hidden;
-}
-
-.dropButton{
-  font-size: 16px;  
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit;
-  margin: 0;
-}
-
-.dropdown-content {
-  position: absolute;
-  z-index: 1;
-  display: none;
-  min-width: 160px;
-  padding: 12px 16px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  right: 0;
-}
-
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .dropDown{
-    display: block;
-  }
-
-  .header ul {
-    display: none;
-    flex-direction: column;
-    padding-right: 0;
-    justify-content: space-around;
-    height: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.8);
-    width: 100%;
-    transition: all 0.5s ease;
-  }
-
-  .header ul.active {
+    z-index: 1;
     display: flex;
-  }
-
-  .header ul li {
-    margin: 10px;
-    padding: 0;
-    width: 100%;
-    text-align: center;
-  }
-
-  .header {
-    height: 50px;
-    padding: 0 10px;
-  }
-
-  .header ul li a {
-    display: block;
-    padding: 10px 0;
-  }
-
-  .content {
-    top: 130px;
-    padding: 20px;
-  }
-}
-
-.menu-item:hover .dropdown-menu {
-  display: block;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    height: 60px; /* Fixed height for the navbar */
+    /* No position: sticky needed; Flexbox and parent positioning handle it */
 }
 
 .content {
-position: relative;
-top: 80px;
-text-align: center;
-color: white;
-background-color: transparent;
-border: none;
-box-shadow: 0px 0px 5px black;
-background: rgba(50, 40, 70, 0.9);
-max-width: 800px;
-margin: 0 auto;
-padding: 50px;
+    text-align: left; /* Retained for left alignment */
+    color: white;
+    background: rgba(50, 40, 70, 0.9);
+    box-shadow: 0px 0px 5px black;
+    max-width: 800px;
+    margin: 50px auto 50px auto; /* Adds bottom margin for spacing from the page edge; adjust as needed */
+    padding: 50px;
+    overflow-y: auto; /* Retained to enable internal scrolling */
+    max-height: calc(100vh - 110px); /* Limits height to viewport minus header (60px) and buffer (50px); adjust buffer for desired shortness */
+}
+
+    .content img {
+        display: block;
+        margin: 0 auto; /* Centers images horizontally if desired */
+    }
+
+ul li a {
+    color: white;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding-right: 20px;
+}
+
+    .header ul li {
+        display: inline-block;
+        margin-right: 10px;
+        padding-left: 10px;
+    }
+
+        .header ul li a {
+            color: white;
+        }
+
+.dropDown {
+    display: none;
+    overflow: hidden;
+}
+
+.dropButton {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    position: absolute;
+    z-index: 1;
+    display: none;
+    min-width: 160px;
+    padding: 12px 16px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+}
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 768px) {
+    .dropDown {
+        display: block;
+    }
+
+    .header ul {
+        display: none;
+        flex-direction: column;
+        padding-right: 0;
+        justify-content: space-around;
+        height: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.8);
+        width: 100%;
+        transition: all 0.5s ease;
+    }
+
+        .header ul.active {
+            display: flex;
+        }
+
+        .header ul li {
+            margin: 10px;
+            padding: 0;
+            width: 100%;
+            text-align: center;
+        }
+
+    .header {
+        height: 50px;
+        padding: 0 10px;
+    }
+
+        .header ul li a {
+            display: block;
+            padding: 10px 0;
+        }
+
+    .content {
+        /* Remove top: 130px; — Flexbox handles positioning */
+        padding: 20px; /* Retained for mobile */
+    }
+}
+
+a {
+    color: #FFF;
+}
+
+    a:hover {
+        color: #00F
+    }
+
+.menu-item:hover .dropdown-menu {
+    display: block;
 }
 
 .dropdown-content.show {
-  display: block;
+    display: block;
 }
+
+.content form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Adds vertical spacing between form elements */
+    max-width: 100%; /* Ensures the form fits within the content div */
+}
+
+.content label {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Space below labels */
+}
+
+.content input,
+.content textarea {
+    width: 100%; /* Full-width inputs for better usability */
+    padding: 0.75rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background to blend with theme */
+    color: white; /* White text for visibility */
+    border: 1px solid rgba(255, 255, 255, 0.3); /* Subtle white border */
+    border-radius: 4px; /* Rounded corners for a modern look */
+    font-size: 1rem;
+    outline: none; /* Remove default focus outline */
+    transition: border-color 0.3s ease; /* Smooth hover/focus effect */
+}
+
+    .content input:focus,
+    .content textarea:focus {
+        border-color: rgba(255, 255, 255, 0.7); /* Brighter border on focus */
+    }
+
+.content textarea {
+    min-height: 150px; /* Ensures sufficient height for messages */
+    resize: vertical; /* Allows vertical resizing */
+}
+
+.content button {
+    align-self: flex-start; /* Aligns button to the left */
+    padding: 0.75rem 1.5rem;
+    background-color: rgba(0, 0, 0, 0.8); /* Dark button background */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .content button:hover {
+        background-color: rgba(0, 0, 0, 1); /* Slightly darker on hover */
+    }
+
+    .content button:disabled {
+        opacity: 0.5; /* Dimmed when disabled (e.g., during sending) */
+        cursor: not-allowed;
+    }
+
+/* Mobile adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+    .content form {
+        gap: 1rem; /* Reduced spacing for mobile */
+    }
+
+    .content input,
+    .content textarea {
+        padding: 0.5rem; /* Slightly smaller padding */
+    }
+
+    .content button {
+        width: 100%; /* Full-width button on mobile for easier tapping */
+        align-self: stretch;
+    }
+}
+
+/* Modal styles (integrated into App.css) */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    overflow-y: hidden;
+}
+
+.modal-content {
+    background-color: rgba(50, 40, 70, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    position: relative;
+    max-width: 80%; /* Constrain width */
+    max-height: 80vh;
+    overflow-y: auto;
+    text-align: left;
+    color: white;
+    margin: 15vh auto; /* Auto margins for centering */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* Optional shadow for depth */
+}
+
+/* Close button style (integrated) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: white;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #bbb;
+        text-decoration: none;
+        cursor: pointer;
+    }

@@ -1,51 +1,10 @@
 import React, { useState, useEffect } from 'react';
 
 import img1 from './images/CK_Headshot.png';
-import img2 from './images/CK_SwordSlash.png';
-import img3 from './images/CK_WhipSlash.png';
-import img4 from './images/CK_WhipSlash2.png';
-import img5 from './images/Crimson_Kaizer.png';
-import img6 from './images/Fenryr.png';
-import img7 from './images/page_3C.png';
-import img8 from './images/Reyi.png';
-import img9 from './images/RinerisF.png';
-import img10 from './images/Rineris_Moves.png';
-import img11 from './images/SkySniper.png';
-import img12 from './images/Thug_1.png';
-import img13 from './images/Thug_Grenade.png';
-import img14 from './images/Thug_MiniGun.png';
-import img15 from './images/Thug_Moves1.png';
-import img16 from './images/Thug_Moves2.png';
-import img17 from './images/Thug_Pistol.png';
-import img18 from './images/Thug_Rifle.png';
-import img19 from './images/Thug_Shotgun.png';
-import img20 from './images/Thug_Spear.png';
-import img21 from './images/Thug_Sword.png';
-import img22 from './images/Thug_Throw.png';
+
 
 const images = [
   { src: img1, alt: 'Crimson Kaizer, Front' },
-  { src: img2, alt: 'Crimson Kaizer, Sword slash' },
-  { src: img3, alt: 'Crimson Kaizer, Whip Slash 1' },
-  { src: img4, alt: 'Crimson Kaizer, Whip Slash 2' },
-  { src: img5, alt: 'Crimson Kaizer, Concept Art' },
-  { src: img6, alt: 'Fenryr, Concept Art'},
-  { src: img7, alt: 'Idyll Haven page'},
-  { src: img8, alt: 'Reyinumate, Arm Shocker'},
-  { src: img9, alt: 'Rineris, Smoke witch'},
-  { src: img10, alt: 'Rineris, Moveset'},
-  { src: img11, alt: 'Zephyre, Sky Sniper'},
-  { src: img12, alt: 'Thug, Concept'},
-  { src: img13, alt: 'Thug, Grenade'},
-  { src: img14, alt: 'Thug, MiniGun'},
-  { src: img15, alt: 'Thug, Moves1'},
-  { src: img16, alt: 'Thug, Moves2'},
-  { src: img17, alt: 'Thug, Pistol'},
-  { src: img18, alt: 'Thug, Rifle'},
-  { src: img19, alt: 'Thug, Shotgun'},
-  { src: img20, alt: 'Thug, Spear'},
-  { src: img21, alt: 'Thug, Sword'},
-  { src: img22, alt: 'Thug, Throw'},
 ];
 
 const modalStyle = {

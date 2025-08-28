@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.0540a7bd.css",
+    "main.js": "/static/js/main.a56c1af7.js",
+    "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
+    "static/media/bg.jpg": "/static/media/bg.6ba57992fd1c89ee5541.jpg",
+    "static/media/ApprenticeWarrior_copy.png": "/static/media/ApprenticeWarrior_copy.2079395a152c221fd560.png",
+    "static/media/ApprenticeCleric_copy.png": "/static/media/ApprenticeCleric_copy.dd8bf27cb9778ad90e09.png",
+    "static/media/ApprenticeHunter_copy.png": "/static/media/ApprenticeHunter_copy.a686fcd282b028369b1d.png",
+    "static/media/SagesLogo.png": "/static/media/SagesLogo.afe9c1d1de93e9195560.png",
+    "static/media/ApprenticeSorc_copy.png": "/static/media/ApprenticeSorc_copy.cad1ebd4138f91196330.png",
+    "static/media/ApprenticeWarrior_Avatar.png": "/static/media/ApprenticeWarrior_Avatar.55693b3b456473d34c57.png",
+    "static/media/ApprenticeSorc_Avatar.png": "/static/media/ApprenticeSorc_Avatar.dcb0e5dbb8236072339c.png",
+    "static/media/DGP_Av.jpg": "/static/media/DGP_Av.f004b22de506f1037e65.jpg",
+    "static/media/ApprenticeHunter_Avatar.png": "/static/media/ApprenticeHunter_Avatar.b9173c5db98b7554059d.png",
+    "static/media/logo_stroke.png": "/static/media/logo_stroke.dd5a181ce875ae143ac3.png",
+    "static/media/ApprenticeCleric_Avatar.png": "/static/media/ApprenticeCleric_Avatar.9c03b88f44f53ac14d13.png",
+    "index.html": "/index.html",
+    "main.0540a7bd.css.map": "/static/css/main.0540a7bd.css.map",
+    "main.a56c1af7.js.map": "/static/js/main.a56c1af7.js.map",
+    "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0540a7bd.css",
+    "static/js/main.a56c1af7.js"
+  ]
+}

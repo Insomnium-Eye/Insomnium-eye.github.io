@@ -1,6 +1,5 @@
 /* App.css (Updated to remove the problematic @import for Modal.css and add modal styles) */
 /* Remove or comment out: @import './css/Modal.css'; */
-
 /* Add these global styles at the top of App.css */
 html, body {
     height: 100%;
@@ -239,7 +238,6 @@ a {
         opacity: 0.5; /* Dimmed when disabled (e.g., during sending) */
         cursor: not-allowed;
     }
-
 /* Mobile adjustments for smaller screens */
 @media screen and (max-width: 768px) {
     .content form {
@@ -256,7 +254,6 @@ a {
         align-self: stretch;
     }
 }
-
 /* Modal styles (integrated into App.css) */
 .modal {
     position: fixed;
@@ -269,7 +266,7 @@ a {
     align-items: center;
     justify-content: center;
     z-index: 1000;
-    overflow-y: hidden;
+    overflow-y: hidden; /* Retain original to prevent backdrop scroll */
 }
 
 .modal-content {
@@ -279,7 +276,7 @@ a {
     position: relative;
     max-width: 80%; /* Constrain width */
     max-height: 80vh;
-    overflow-y: auto;
+    overflow-y: auto; /* Enable internal scrolling */
     text-align: left;
     color: white;
     margin: 15vh auto; /* Auto margins for centering */
@@ -288,13 +285,14 @@ a {
 
 /* Close button style (integrated) */
 .close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+    position: fixed; /* Changed from absolute to fixed for static positioning */
+    top: 15vh; /* Align with modal-content top margin */
+    right: 10%; /* Position relative to viewport right edge */
     color: white;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
+    z-index: 1010; /* Higher z-index to stay above modal-content */
 }
 
     .close:hover,
@@ -303,3 +301,38 @@ a {
         text-decoration: none;
         cursor: pointer;
     }
+
+/* New styles for character modal optimization */
+.character-modal {
+    position: relative;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #1a1a2e;
+    color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+    .character-modal .image-container {
+        max-width: 100%;
+        overflow: hidden;
+        margin-bottom: 15px; /* Space between image and info */
+    }
+
+    .character-modal img {
+        max-width: 100%;
+        max-height: 400px; /* Adjustable based on design */
+        object-fit: contain;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .character-modal .info-container {
+        padding: 15px;
+        max-width: 100%;
+    }
+
+        /* Ensure nested info containers don’t conflict */
+        .character-modal .info-container + .info-container {
+            margin-top: 15px;
+        }

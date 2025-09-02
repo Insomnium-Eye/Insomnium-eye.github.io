@@ -35,7 +35,7 @@ function SagesOfOzvaram({ expanded = false }) {
         { name: 'Sorcerer', avatar: ApprenticeSorcAvatar },
         { name: 'Warrior', avatar: ApprenticeWarriorAvatar },
         { name: 'Cleric', avatar: ApprenticeClericAvatar },
-        { name: 'Hunter', avatar: ApprenticeHunterAvatar }
+        { name: 'Hunter', avatar: ApprenticeHunterAvatar },
     ];
 
     return (
@@ -55,7 +55,7 @@ function SagesOfOzvaram({ expanded = false }) {
             Freely explore diverse areas, uncovering numerous hidden secrets, interacting with NPCs and items, and engaging creatures in battle, each region featuring a unique outline.<br />
             <b>Deep Lore</b><br />
             Delve into the world of Ozvaram, conceived in 2009, to reveal its mysteries, forge alliances, and understand its characters.<br />
-            <h2 onClick={toggleFeatures} style={{ cursor: 'pointer' }}>Features ▼</h2>
+            <h2 onClick={toggleFeatures} style={{ cursor: 'pointer' }}>Features {featuresOpen ? '▼' : '◄'}</h2>
             {featuresOpen && (
                 <div>
                     <h3>Turn-based Combat</h3>
@@ -72,7 +72,7 @@ function SagesOfOzvaram({ expanded = false }) {
                     <p>Engage with Ozvaram’s rich history, established in 2009, to form alliances and uncover its narrative depth.</p>
                 </div>
             )}
-            <h2 onClick={toggleCharacters} style={{ cursor: 'pointer' }}>Characters ▼</h2>
+            <h2 onClick={toggleCharacters} style={{ cursor: 'pointer' }}>Characters {charactersOpen ? '▼' : '◄'}</h2>
             {charactersOpen && (
                 <div>
                     {characters.map((char, index) => (
@@ -83,7 +83,7 @@ function SagesOfOzvaram({ expanded = false }) {
                     ))}
                 </div>
             )}
-            <h2 onClick={toggleStory} style={{ cursor: 'pointer' }}>Story ▼</h2>
+            <h2 onClick={toggleStory} style={{ cursor: 'pointer' }}>Story {storyOpen ? '▼' : '◄'}</h2>
             {storyOpen && (
                 <div>
                     <p>
@@ -102,4 +102,5 @@ function SagesOfOzvaram({ expanded = false }) {
         </div>
     );
 }
+
 export default SagesOfOzvaram;

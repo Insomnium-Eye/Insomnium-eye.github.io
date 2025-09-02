@@ -1,9 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.0540a7bd.css",
-    "main.js": "/static/js/main.d214a907.js",
+    "main.css": "/static/css/main.bfa2b580.css",
+    "main.js": "/static/js/main.3518b470.js",
     "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.6ba57992fd1c89ee5541.jpg",
+    "static/media/GridDemo.PNG": "/static/media/GridDemo.f6856920c9d3b5fd1cb0.PNG",
     "static/media/ApprenticeWarrior_copy.png": "/static/media/ApprenticeWarrior_copy.2079395a152c221fd560.png",
     "static/media/ApprenticeCleric_copy.png": "/static/media/ApprenticeCleric_copy.dd8bf27cb9778ad90e09.png",
     "static/media/ApprenticeHunter_copy.png": "/static/media/ApprenticeHunter_copy.a686fcd282b028369b1d.png",
@@ -16,12 +17,12 @@
     "static/media/logo_stroke.png": "/static/media/logo_stroke.dd5a181ce875ae143ac3.png",
     "static/media/ApprenticeCleric_Avatar.png": "/static/media/ApprenticeCleric_Avatar.9c03b88f44f53ac14d13.png",
     "index.html": "/index.html",
-    "main.0540a7bd.css.map": "/static/css/main.0540a7bd.css.map",
-    "main.d214a907.js.map": "/static/js/main.d214a907.js.map",
+    "main.bfa2b580.css.map": "/static/css/main.bfa2b580.css.map",
+    "main.3518b470.js.map": "/static/js/main.3518b470.js.map",
     "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0540a7bd.css",
-    "static/js/main.d214a907.js"
+    "static/css/main.bfa2b580.css",
+    "static/js/main.3518b470.js"
   ]
 }

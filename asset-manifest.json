@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfa2b580.css",
-    "main.js": "/static/js/main.3518b470.js",
+    "main.js": "/static/js/main.6e69f0fd.js",
     "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
     "static/media/bg.jpg": "/static/media/bg.6ba57992fd1c89ee5541.jpg",
     "static/media/GridDemo.PNG": "/static/media/GridDemo.f6856920c9d3b5fd1cb0.PNG",
@@ -10,6 +10,9 @@
     "static/media/ApprenticeHunter_copy.png": "/static/media/ApprenticeHunter_copy.a686fcd282b028369b1d.png",
     "static/media/SagesLogo.png": "/static/media/SagesLogo.afe9c1d1de93e9195560.png",
     "static/media/ApprenticeSorc_copy.png": "/static/media/ApprenticeSorc_copy.cad1ebd4138f91196330.png",
+    "static/media/Arena3.PNG": "/static/media/Arena3.e09bc5f54b615200f37f.PNG",
+    "static/media/Arena1.PNG": "/static/media/Arena1.604b11f4b7c0b2b3c03f.PNG",
+    "static/media/Arena2.PNG": "/static/media/Arena2.79783620e35e3d285341.PNG",
     "static/media/ApprenticeWarrior_Avatar.png": "/static/media/ApprenticeWarrior_Avatar.55693b3b456473d34c57.png",
     "static/media/ApprenticeSorc_Avatar.png": "/static/media/ApprenticeSorc_Avatar.dcb0e5dbb8236072339c.png",
     "static/media/DGP_Av.jpg": "/static/media/DGP_Av.f004b22de506f1037e65.jpg",
@@ -18,11 +21,11 @@
     "static/media/ApprenticeCleric_Avatar.png": "/static/media/ApprenticeCleric_Avatar.9c03b88f44f53ac14d13.png",
     "index.html": "/index.html",
     "main.bfa2b580.css.map": "/static/css/main.bfa2b580.css.map",
-    "main.3518b470.js.map": "/static/js/main.3518b470.js.map",
+    "main.6e69f0fd.js.map": "/static/js/main.6e69f0fd.js.map",
     "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfa2b580.css",
-    "static/js/main.3518b470.js"
+    "static/js/main.6e69f0fd.js"
   ]
 }

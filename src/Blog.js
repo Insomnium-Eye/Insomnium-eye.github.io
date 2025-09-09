@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import GridDemo from './images/GridDemo.PNG'; // Adjust path if needed
+import A1 from './images/Arena1.PNG';
+import A2 from './images/Arena2.PNG';
+import A3 from './images/Arena3.PNG';
 
 function Blog() {
     const blogPosts = [
@@ -42,6 +45,40 @@ function Blog() {
                     <p>Distinguishing this game from others in its genre, the same maps serve dual purposes for both overworld exploration and battle engagements, ensuring a seamless transition between modes.</p>
                     <p>Engage with other units by approaching them directly. Their dialogue is dynamically generated, adapting based on player interactions for a personalized narrative experience.</p>
                     <p>Upcoming enhancements will focus on 'Battle Mode' instructions and graphic optimization.</p>
+                </>
+            ),
+        },
+        {
+            date: '09/09/2025',
+            content: (
+                <>
+                    <h1>Introducing the Arena Stage</h1>
+                    <p>The Arena, the first official stage in <b>Sages of Ozvaram</b>, features a circular layout with a central wall, designed to test collision mechanics and provide strategic cover during battles.</p>
+                    <p>Dynamic tile generation enhances replayability, with grass tiles spawning randomly on dirt tile locations each session, creating varied battle environments.</p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '15px', margin: '15px 0' }}>
+                        <img
+                            src={A1}
+                            alt="Arena stage with central wall in Sages of Ozvaram"
+                            title="Arena with central wall"
+                            loading="lazy"
+                            style={{ width: '100%', maxWidth: '300px' }}
+                        />
+                        <img
+                            src={A2}
+                            alt="Random grass tile generation in Arena stage"
+                            title="Random grass tiles"
+                            loading="lazy"
+                            style={{ width: '100%', maxWidth: '300px' }}
+                        />
+                        <img
+                            src={A3}
+                            alt="Gameplay in Arena stage showing collision mechanics"
+                            title="Collision mechanics"
+                            loading="lazy"
+                            style={{ width: '100%', maxWidth: '300px' }}
+                        />
+                    </div>
+                    <p>Future updates will refine the Arena’s mechanics and introduce additional stages to enrich the gameplay experience.</p>
                 </>
             ),
         },

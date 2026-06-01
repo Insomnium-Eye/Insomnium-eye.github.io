@@ -3,6 +3,13 @@ import GridDemo from './images/GridDemo.PNG'; // Adjust path if needed
 import A1 from './images/Arena1.PNG';
 import A2 from './images/Arena2.PNG';
 import A3 from './images/Arena3.PNG';
+import SorcererSprite from './images/Sprites/SorcererSprite_1 copy.png';
+import LethiosSprite from './images/Sprites/Lethios_Sprite_1.png';
+import ClericSprite from './images/Sprites/Cleric Sprite_1 copy.png';
+import HunterSprite from './images/Sprites/Hunter Sprite_1.png';
+import RoachgoblinSprite from './images/Sprites/Roachgoblin_Sprite_1.png';
+import ArcaneBoltCard from './images/CardArt/Spells/ArcaneBolt_CardArt.png';
+import DuskRoachlinCard from './images/CardArt/Summons/DuskRoachlin_CardArt1.png';
 
 function Blog() {
     const blogPosts = [
@@ -78,7 +85,59 @@ function Blog() {
                             style={{ width: '100%', maxWidth: '300px' }}
                         />
                     </div>
-                    <p>Future updates will refine the Arena’s mechanics and introduce additional stages to enrich the gameplay experience.</p>
+                    <p>Future updates will refine the Arena's mechanics and introduce additional stages to enrich the gameplay experience.</p>
+                </>
+            ),
+        },
+        {
+            date: '05/31/2026',
+            content: (
+                <>
+                    <h1>Artwork Update &mdash; Sprites &amp; Card Art</h1>
+
+                    <h2>Unit Sprites</h2>
+                    <p>Meet the four hero classes and one of the monsters you'll encounter in <b>Sages of Ozvaram</b>. Each unit is hand-crafted as a pixel sprite to fit the game's tactical grid.</p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', margin: '15px 0', alignItems: 'flex-end' }}>
+                        {[
+                            { src: SorcererSprite, label: 'Vectium Sorcerer' },
+                            { src: LethiosSprite, label: 'Lethios Warrior' },
+                            { src: ClericSprite, label: 'Human Cleric' },
+                            { src: HunterSprite, label: 'Human Hunter' },
+                            { src: RoachgoblinSprite, label: 'Dusk Roachlin' },
+                        ].map(({ src, label }) => (
+                            <div key={label} style={{ textAlign: 'center' }}>
+                                <img
+                                    src={src}
+                                    alt={label + ' sprite'}
+                                    title={label}
+                                    loading="lazy"
+                                    style={{ imageRendering: 'pixelated', height: '120px', display: 'block', margin: '0 auto' }}
+                                />
+                                <span style={{ fontSize: '0.8rem', color: '#ccc', marginTop: '6px', display: 'block' }}>{label}</span>
+                            </div>
+                        ))}
+                    </div>
+
+                    <h2>Spell Card Art</h2>
+                    <p>Spells in <b>Sages of Ozvaram</b> work like trading cards &mdash; each spell is a card with its own unique artwork, ready to be played from your hand during battle.</p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', margin: '15px 0' }}>
+                        {[
+                            { src: ArcaneBoltCard, label: 'Arcane Bolt', desc: 'A mid-range spell for the Sorcerer.' },
+                            { src: DuskRoachlinCard, label: 'Dusk Roachlin', desc: 'A generic summon card.' },
+                        ].map(({ src, label, desc }) => (
+                            <div key={label} style={{ textAlign: 'center', maxWidth: '240px' }}>
+                                <img
+                                    src={src}
+                                    alt={label + ' card art'}
+                                    title={label}
+                                    loading="lazy"
+                                    style={{ width: '100%', borderRadius: '8px', display: 'block' }}
+                                />
+                                <strong style={{ display: 'block', marginTop: '8px' }}>{label}</strong>
+                                <span style={{ fontSize: '0.85rem', color: '#ccc' }}>{desc}</span>
+                            </div>
+                        ))}
+                    </div>
                 </>
             ),
         },

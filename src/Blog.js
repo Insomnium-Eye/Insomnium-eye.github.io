@@ -10,6 +10,13 @@ import HunterSprite from './images/Sprites/Hunter Sprite_1.png';
 import RoachgoblinSprite from './images/Sprites/Roachgoblin_Sprite_1.png';
 import ArcaneBoltCard from './images/CardArt/Spells/ArcaneBolt_CardArt.png';
 import DuskRoachlinCard from './images/CardArt/Summons/DuskRoachlin_CardArt1.png';
+import A4 from './images/Blog/09222026/CharacterSelect.png';
+import A5 from './images/Blog/09222026/RNGMap.png';
+import Attacks from './images/Blog/09222026/AttackMenu.png';
+import Cards1 from './images/Blog/09222026/Spells1.png';
+import Cards2 from './images/Blog/09222026/Spells2.png';
+import Cards3 from './images/Blog/09222026/Spells3.png';
+
 
 function Blog() {
     const blogPosts = [
@@ -138,6 +145,70 @@ function Blog() {
                             </div>
                         ))}
                     </div>
+                </>
+            ),
+        },
+        {
+            date: '09/22/2026',
+            content: (
+                <>
+                    <h1>From Unreal to C#: Rebuilding Sages of Ozvaram</h1>
+
+                    <h2>Introduction</h2>
+                    <p><b>Sages of Ozvaram</b> has entered a new stage of development. The project is still the same turn-based tactical RPG set in the world of Ozvaram, but the technology underneath it has changed. After developing the earlier version in Unreal Engine, I have rebuilt the project in C# with .NET 8 and MonoGame DesktopGL.</p>
+                    <p>This was a large change, but it has given the game a clearer foundation. The current version is focused on the parts that matter most right now: hex-grid movement, turn order, Action Points, Mana, weapons, class abilities, spell cards, summon cards, and decks.</p>
+
+                    <h2>Why We Moved Away from Unreal</h2>
+                    <p>Unreal Engine was useful during the earlier stage of development. It helped establish the idea of the game and gave the project a place to explore its visual direction and basic gameplay. As the design became more specific, however, I found that the project needed a different kind of foundation.</p>
+                    <p>C# and MonoGame became a better fit for the current scope and needs of <b>Sages of Ozvaram</b>. MonoGame is a lightweight framework rather than a large all-in-one engine, which suits a 2D tactical RPG well. It gives me more direct control over the game systems and source code, while keeping the development environment focused on the actual problems the game needs to solve.</p>
+                    <p>The change also makes it faster to iterate on turn systems, combat rules, cards, decks, and procedural maps. Instead of working around a general-purpose engine structure, the project can use a code-driven, data-oriented approach. Classes, weapons, spells, summons, and status effects can be represented as focused pieces of data and logic that are easier to adjust as the design develops.</p>
+
+                    <h2>Rebuilding the Core in C#</h2>
+                    <p>The first step was rebuilding the project as a C# and .NET 8 MonoGame project. That meant recreating the systems that had already been explored, then reshaping them around the new structure. It was not simply a matter of moving files from one project to another. The transition provided an opportunity to decide which parts of the game should be flexible data and which parts should be rules handled by the code.</p>
+                    <p>That distinction is important for a game with several classes and many possible cards. A spell should be able to describe its artwork, cost, statistics, and effects without requiring an entirely new system for every card. The same idea applies to summons, weapons, and status effects. The current implementation is still growing, but it is now moving in that direction.</p>
+
+                    <h2>The Tactical Foundation</h2>
+                    <p>A playable tactical map is now in place using a hex grid. Maps can also be generated procedurally, so the project is no longer limited to one hand-built arrangement. Procedural generation means that the map is assembled by rules when it is created, giving the game a foundation for varied encounters and more replayable battles.</p>
+                    <p>Units can be placed on the map and take turns according to their Speed statistic. The action-point system is also in place. Movement, attacks, defensive actions, and Guard all use Action Points, giving each turn a limited set of choices instead of allowing every unit to perform everything at once.</p>
+                    <p>The initial hero roster is made up of the Sorcerer, Warrior, Cleric, and Hunter. Each class has its own identity, weapons, statistics, and class-specific spell cards. Generic summon cards are also available, which means different classes can include summons in their decks rather than keeping that part of the game locked to one hero.</p>
+                    <p><strong>[SCREENSHOT 1 & 2: Current tactical map and units]</strong></p>
+                    <img src={A4} alt="New character select" title="Character Select" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
+                    <img src={A5} alt="Randomly Generated Map" title="Randomly Generated Map" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
+
+                    <h2>The Attack & Card Deck System</h2>
+                    <p>Units have a set of attacks they can perfmorm, based on that unit's typing. Additional attacks are unlocked if that unit has a weapon equipped.</p>
+                    <p><strong>[SCREENSHOT 3: Dynamic Attack Menu]</strong></p>
+                    <img src={Attacks} alt="Attack menu" title="Attack Menu" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
+
+                    <p>The card system is the newest major gameplay layer. Spell cards and summon cards are rendered dynamically from card templates, artwork, statistics, costs, and descriptions. This allows the same interface to present different cards while the underlying data changes. Placeholder card artwork and unit sprites are being used wherever final art is not available yet.</p>
+                    <p>Class decks are randomly generated from class-specific spells and generic summon cards. Each unit now begins with three cards in hand, and cards are displayed along the bottom of the interface. Players can browse their hand, highlight cards with either the keyboard or cursor, and zoom in on a selected card to inspect it.</p>
+                    <p><strong>[SCREENSHOT 4: Card hand and deck interface]</strong></p>
+                    <p>The draw process is now manual. Players spend Action Points to draw cards from their deck, and the cost increases each time during a turn: 1 AP, then 2 AP, then 4 AP, and finally 8 AP. Cards are no longer drawn automatically at the start of each turn. This makes drawing a deliberate choice: a player has to decide whether another card is worth giving up Action Points that could have been spent on movement, an attack, or defense.</p>
+                    <p><strong>[SCREENSHOT 5: Spell card close-up]</strong></p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', margin: '15px 0' }}>
+                        <img src={Cards1} alt="Cards" title="Random Cards" loading="lazy" style={{ width: '100%', maxWidth: '240px', borderRadius: '8px' }} />
+                        <img src={Cards2} alt="Highlighted Card" title="Highlighted Card" loading="lazy" style={{ width: '100%', maxWidth: '240px', borderRadius: '8px' }} />
+                        <img src={Cards3} alt="Another spell card" title="Another Spell" loading="lazy" style={{ width: '100%', maxWidth: '240px', borderRadius: '8px' }} />
+                    </div>
+
+                    <h2>Where the Project Stands Now</h2>
+                    <p>The project now has a working tactical map, procedural generation, speed-based turns, Action Points, the four initial hero classes, and the first version of its deck and hand interface. The card templates can present spells and summons with their own artwork, costs, statistics, and descriptions. The current sprites and card images also make it easier to see how these systems will eventually fit together visually.</p>
+                    <p><strong>[SCREENSHOT 4: Unit sprites or summon card]</strong></p>
+                    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '20px', margin: '15px 0', alignItems: 'flex-end' }}>
+                        <img src={SorcererSprite} alt="Sorcerer unit sprite" title="Sorcerer" loading="lazy" style={{ imageRendering: 'pixelated', height: '120px' }} />
+                        <img src={LethiosSprite} alt="Warrior unit sprite" title="Warrior" loading="lazy" style={{ imageRendering: 'pixelated', height: '120px' }} />
+                        <img src={ClericSprite} alt="Cleric unit sprite" title="Cleric" loading="lazy" style={{ imageRendering: 'pixelated', height: '120px' }} />
+                        <img src={HunterSprite} alt="Hunter unit sprite" title="Hunter" loading="lazy" style={{ imageRendering: 'pixelated', height: '120px' }} />
+                    </div>
+                    <p>This is still an early gameplay layer. The deck, hand, card presentation, and draw-cost systems are present, but actual spell casting and summon deployment are still being developed. Full combat resolution is not complete, so the current version should be understood as a foundation for those interactions rather than a finished battle system.</p>
+
+                    <h2>What Comes Next</h2>
+                    <p>The next stage is about connecting the cards to the tactical game. Players need to be able to cast spells directly from their hand, select valid targets, and follow range rules. Playing a card will also need to spend Mana, just as movement and attacks spend Action Points.</p>
+                    <p>Summons will need their own deployment rules and behavior. Card effects will then be connected to combat, healing, buffs, debuffs, and movement. I also need to add discard and deck reshuffling rules, refine the interface and card interactions, and replace the placeholder artwork with final assets.</p>
+                    <p>Once those pieces are working together, balancing can begin in a more meaningful way. Class strengths, spells, summons, Action Point costs, and Mana costs will all need testing and adjustment. The tactical map and combat encounters will expand alongside that work, so the systems are tested in situations that feel closer to the intended game.</p>
+
+                    <h2>Closing Development Note</h2>
+                    <p>Moving from Unreal Engine to C# was a significant step, but it has made the direction of <b>Sages of Ozvaram</b> feel more focused. The project now has a foundation that matches its current needs and gives me direct control over the systems I am building. There is still a lot to solve before the cards become fully playable, but the map, units, turns, decks, and hands are beginning to form a coherent game. I will keep building it piece by piece.</p>
                 </>
             ),
         },

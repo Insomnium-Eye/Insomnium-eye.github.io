@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfa2b580.css",
-    "main.js": "/static/js/main.c75fda20.js",
+    "main.js": "/static/js/main.9e071c14.js",
     "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
     "static/media/ArcaneBolt_CardArt.png": "/static/media/ArcaneBolt_CardArt.fb270c38661aa10b5eee.png",
     "static/media/DuskRoachlin_CardArt1.png": "/static/media/DuskRoachlin_CardArt1.007a63d70cae2d8a8db5.png",
@@ -15,10 +15,16 @@
     "static/media/Arena3.PNG": "/static/media/Arena3.e09bc5f54b615200f37f.PNG",
     "static/media/Arena1.PNG": "/static/media/Arena1.604b11f4b7c0b2b3c03f.PNG",
     "static/media/Arena2.PNG": "/static/media/Arena2.79783620e35e3d285341.PNG",
+    "static/media/Spells3.png": "/static/media/Spells3.2abd6d6603be5f6e758a.png",
+    "static/media/Spells2.png": "/static/media/Spells2.397e4f481109d171cbd9.png",
+    "static/media/CharacterSelect.png": "/static/media/CharacterSelect.a6d30c137cf0bbfb3d28.png",
+    "static/media/Spells1.png": "/static/media/Spells1.e93b19a8687c11faf41e.png",
+    "static/media/RNGMap.png": "/static/media/RNGMap.689c47c8f859decedc44.png",
     "static/media/Roachgoblin_Sprite_1.png": "/static/media/Roachgoblin_Sprite_1.29ff929fbb473ae4721f.png",
     "static/media/Lethios_Sprite_1.png": "/static/media/Lethios_Sprite_1.7591b87df88eeb82866b.png",
     "static/media/ApprenticeWarrior_Avatar.png": "/static/media/ApprenticeWarrior_Avatar.55693b3b456473d34c57.png",
     "static/media/ApprenticeSorc_Avatar.png": "/static/media/ApprenticeSorc_Avatar.dcb0e5dbb8236072339c.png",
+    "static/media/AttackMenu.png": "/static/media/AttackMenu.64386a42626a67f1ffa5.png",
     "static/media/Cleric Sprite_1 copy.png": "/static/media/Cleric Sprite_1 copy.39049f04cfa9b89fc848.png",
     "static/media/Hunter Sprite_1.png": "/static/media/Hunter Sprite_1.66d45fe71f78c360b177.png",
     "static/media/SorcererSprite_1 copy.png": "/static/media/SorcererSprite_1 copy.af9c6c2e2ca50b37a3ed.png",
@@ -28,11 +34,11 @@
     "static/media/ApprenticeCleric_Avatar.png": "/static/media/ApprenticeCleric_Avatar.9c03b88f44f53ac14d13.png",
     "index.html": "/index.html",
     "main.bfa2b580.css.map": "/static/css/main.bfa2b580.css.map",
-    "main.c75fda20.js.map": "/static/js/main.c75fda20.js.map",
+    "main.9e071c14.js.map": "/static/js/main.9e071c14.js.map",
     "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfa2b580.css",
-    "static/js/main.c75fda20.js"
+    "static/js/main.9e071c14.js"
   ]
 }

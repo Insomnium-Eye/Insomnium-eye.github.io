@@ -212,6 +212,40 @@ function Blog() {
                 </>
             ),
         },
+        {
+            date: '10/01/2026',
+            content: (
+                <>
+                    <h1>Spells Unleashed &mdash; Mana, Casting &amp; Class Kits</h1>
+                    <p>Last time I said the next step was connecting the cards to the tactical game. Well, the cards have been sitting in your hand looking pretty for long enough. This update is all about making magic actually <i>do</i> something in <b>Sages of Ozvaram</b>.</p>
+
+                    <h2>Mana Flows</h2>
+                    <p>MP is now a living resource that refills every turn &mdash; but not equally for everyone. Sorcerers, as the realm's true spellcasters, regenerate mana the fastest. Clerics follow close behind, while Warriors and Hunters, who'd rather solve problems with steel and arrows, recover it the slowest. Choose your class, choose your rhythm.</p>
+                    <p>I also squashed a sneaky bug: swinging a Staff or Wand used to drain mana even on a plain basic attack. Not anymore &mdash; only true magic attacks like Frost Blast and Arcane Missile will dip into your reserves now.</p>
+
+                    <h2>Cast It For Real</h2>
+                    <p>Spells have officially graduated from &ldquo;look but don't touch.&rdquo; Pick a card from your hand, spend the AP and MP, choose your target (or just let it erupt around you), and watch it land. Single-target blasts and spells that hit everything standing next to you are fully live &mdash; around 20 of them across the roster, and counting.</p>
+
+                    <h2>Three New Class Kits</h2>
+                    <p>Sorcerers, Warriors, and Hunters each now have a full kit of 15 class spells, on top of the 10 Generic spells anyone can cast and the trusty Arcane Bolt:</p>
+                    <p><b>Sorcerer</b> &mdash; Raw elemental and arcane devastation. Hurl a <b>Fireball</b>, freeze the field with <b>Frost Nova</b>, arc <b>Chain Lightning</b> through a crowd, or unleash an <b>Arcane Orb</b>. When things get dicey, <b>Blink</b> away, raise a <b>Mana Shield</b>, or <b>Enchant Weapon</b> to give your strikes an arcane edge.</p>
+                    <p><b>Warrior</b> &mdash; Buffs, summoned weapons, shields and armor, and brutal weapon techniques. Spin into a <b>Whirlwind</b>, <b>Charge</b> into the fray, finish them with <b>Execute</b>, hunker down behind a <b>Shield Wall</b>, or let loose your <b>Rage</b>.</p>
+                    <p><b>Hunter</b> &mdash; Ranged precision, traps, and beasts. Rain down <b>Multi-Shot</b>, <b>Place Trap</b> for the unwary, <b>Track</b> your quarry, paint it with <b>Hunter's Mark</b>, and even <b>Tame Beast</b> to fight at your side.</p>
+
+                    <h2>Beware the Dusk Roachlin</h2>
+                    <p>Remember that Roachlin sprite from the artwork update? It's now the game's first fully-statted, playable summon. These cave-dwelling critters can't stand daylight, but in the dark they swarm &mdash; and they never come alone.</p>
+                    <img
+                        src={DuskRoachlinCard}
+                        alt="Dusk Roachlin card art"
+                        title="Dusk Roachlin"
+                        loading="lazy"
+                        style={{ width: '100%', maxWidth: '240px', borderRadius: '8px', display: 'block', margin: '15px 0' }}
+                    />
+
+                    <p>More spells are coming online with every update. Stay tuned, adventurer!</p>
+                </>
+            ),
+        },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(blogPosts.length - 1);

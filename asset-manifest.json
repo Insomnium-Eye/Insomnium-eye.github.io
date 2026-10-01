@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bfa2b580.css",
-    "main.js": "/static/js/main.9e071c14.js",
+    "main.js": "/static/js/main.2342388c.js",
     "static/js/787.bd96660e.chunk.js": "/static/js/787.bd96660e.chunk.js",
     "static/media/ArcaneBolt_CardArt.png": "/static/media/ArcaneBolt_CardArt.fb270c38661aa10b5eee.png",
     "static/media/DuskRoachlin_CardArt1.png": "/static/media/DuskRoachlin_CardArt1.007a63d70cae2d8a8db5.png",
@@ -34,11 +34,11 @@
     "static/media/ApprenticeCleric_Avatar.png": "/static/media/ApprenticeCleric_Avatar.9c03b88f44f53ac14d13.png",
     "index.html": "/index.html",
     "main.bfa2b580.css.map": "/static/css/main.bfa2b580.css.map",
-    "main.9e071c14.js.map": "/static/js/main.9e071c14.js.map",
+    "main.2342388c.js.map": "/static/js/main.2342388c.js.map",
     "787.bd96660e.chunk.js.map": "/static/js/787.bd96660e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bfa2b580.css",
-    "static/js/main.9e071c14.js"
+    "static/js/main.2342388c.js"
   ]
 }

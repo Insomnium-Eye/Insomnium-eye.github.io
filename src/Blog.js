@@ -246,6 +246,33 @@ function Blog() {
                 </>
             ),
         },
+        {
+            date: '10/21/2026',
+            content: (
+                <>
+                    <h1>Pack Your Bags &mdash; Items, Portals &amp; Battlefield Polish</h1>
+                    <p>Last time, spells went from decorative to devastating. This update is about everything <i>around</i> the spellcasting &mdash; carrying gear, summoning smarter, and actually seeing what a buff is doing to you mid-fight.</p>
+
+                    <h2>Items &amp; Potions</h2>
+                    <p>Every unit now has a real Items menu &mdash; not just a list of what's equipped, but something you can actually use. Open it up on your turn to inspect any weapon (stats, what attacks it grants, the works), swap what's in your hands for a cost, or crack open a potion. Speaking of which: <b>Conjure Potions</b> finally does something &mdash; cast it and you'll walk away with a Minor HP Potion, a Minor MP Potion, and a Minor AP Potion, ready to drink the moment you need them.</p>
+
+                    <h2>Open a Portal</h2>
+                    <p>Summoning just got a wrinkle, in a good way. The first creature you summon in a fight now requires planting a <b>Generic Portal</b> on the field first &mdash; a small mana investment that pays off, since every summon after that comes through for free as long as the portal stands. Destroy someone's portal and you've cut off their reinforcements until they open a new one. Portals are the first of a new breed of battlefield objects we're calling <b>Relics</b> &mdash; things that can take a hit and go down, but never act on their own.</p>
+
+                    <h2>See Your Buffs</h2>
+                    <p>Buffs and debuffs are no longer a mystery you have to remember you cast. Hover over any unit (or just glance at your own) and you'll see exactly what's boosting their stats and by how much &mdash; Brace's steady +4, Guard's bonus while they're hunkered down, all of it laid out at a glance. Scouting the field in View Map mode now also lets you pull up a full stat sheet for any unit in view.</p>
+
+                    <h2>Smaller Things Worth Mentioning</h2>
+                    <ul>
+                        <li><b>Forced Sleep</b> now heals the instant you cast it, so a quick nap-and-wake is actually worth doing.</li>
+                        <li><b>Meditate</b>'s stacking bonus got reined in &mdash; it was getting a little absurd at full stacks.</li>
+                        <li>Landing a hit actually feels like landing a hit now: units flinch and flash on impact instead of just losing a number off their HP bar.</li>
+                    </ul>
+
+                    <p>That's the gear and ground-level stuff sorted. Stay tuned, adventurer!</p>
+                </>
+            ),
+        },
     ];
 
     const [currentIndex, setCurrentIndex] = useState(blogPosts.length - 1);

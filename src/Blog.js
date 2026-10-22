@@ -16,6 +16,10 @@ import Attacks from './images/Blog/09222026/AttackMenu.png';
 import Cards1 from './images/Blog/09222026/Spells1.png';
 import Cards2 from './images/Blog/09222026/Spells2.png';
 import Cards3 from './images/Blog/09222026/Spells3.png';
+import ItemMenu from './images/Blog/10212026/ItemMenu.png';
+import PortalShot from './images/Blog/10212026/Portal.png';
+import BuffsShot from './images/Blog/10212026/Buffs.png';
+import DamageShot from './images/Blog/10212026/Damage.png';
 
 
 function Blog() {
@@ -255,12 +259,15 @@ function Blog() {
 
                     <h2>Items &amp; Potions</h2>
                     <p>Every unit now has a real Items menu &mdash; not just a list of what's equipped, but something you can actually use. Open it up on your turn to inspect any weapon (stats, what attacks it grants, the works), swap what's in your hands for a cost, or crack open a potion. Speaking of which: <b>Conjure Potions</b> finally does something &mdash; cast it and you'll walk away with a Minor HP Potion, a Minor MP Potion, and a Minor AP Potion, ready to drink the moment you need them.</p>
+                    <img src={ItemMenu} alt="Items menu listing equipped weapon, pistol and dagger" title="Items Menu" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
 
                     <h2>Open a Portal</h2>
                     <p>Summoning just got a wrinkle, in a good way. The first creature you summon in a fight now requires planting a <b>Generic Portal</b> on the field first &mdash; a small mana investment that pays off, since every summon after that comes through for free as long as the portal stands. Destroy someone's portal and you've cut off their reinforcements until they open a new one. Portals are the first of a new breed of battlefield objects we're calling <b>Relics</b> &mdash; things that can take a hit and go down, but never act on their own.</p>
+                    <img src={PortalShot} alt="Generic Portal relic placed on the battlefield next to a summoned creature" title="Generic Portal" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
 
                     <h2>See Your Buffs</h2>
                     <p>Buffs and debuffs are no longer a mystery you have to remember you cast. Hover over any unit (or just glance at your own) and you'll see exactly what's boosting their stats and by how much &mdash; Brace's steady +4, Guard's bonus while they're hunkered down, all of it laid out at a glance. Scouting the field in View Map mode now also lets you pull up a full stat sheet for any unit in view.</p>
+                    <img src={BuffsShot} alt="Unit stat sheet showing active buffs and effects" title="Buffs & Stat Sheet" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
 
                     <h2>Smaller Things Worth Mentioning</h2>
                     <ul>
@@ -268,6 +275,7 @@ function Blog() {
                         <li><b>Meditate</b>'s stacking bonus got reined in &mdash; it was getting a little absurd at full stacks.</li>
                         <li>Landing a hit actually feels like landing a hit now: units flinch and flash on impact instead of just losing a number off their HP bar.</li>
                     </ul>
+                    <img src={DamageShot} alt="Unit flashing on impact after taking a hit" title="Hit Feedback" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
 
                     <p>That's the gear and ground-level stuff sorted. Stay tuned, adventurer!</p>
                 </>

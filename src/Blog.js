@@ -20,6 +20,8 @@ import ItemMenu from './images/Blog/10212026/ItemMenu.png';
 import PortalShot from './images/Blog/10212026/Portal.png';
 import BuffsShot from './images/Blog/10212026/Buffs.png';
 import DamageShot from './images/Blog/10212026/Damage.png';
+import AbilityPortal from '/images/Blog/11032026/AbilityPortal.png';
+
 
 
 function Blog() {
@@ -278,6 +280,42 @@ function Blog() {
                     <img src={DamageShot} alt="Unit flashing on impact after taking a hit" title="Hit Feedback" loading="lazy" style={{ width: '100%', maxWidth: '600px', margin: '15px 0' }} />
 
                     <p>That's the gear and ground-level stuff sorted. Stay tuned, adventurer!</p>
+                </>
+            ),
+        },
+        {
+            date: '11/03/2026',
+            content: (
+                <>
+                    <h1>Uncharted Territory &mdash; Abilities, Threat &amp; a World Without Edges</h1>
+                    <p>Last time it was gear, portals, and finally being able to see what's buffing you mid-fight. This update goes bigger: units picked up real innate abilities, enemies got noticeably smarter about who they're actually mad at, and &mdash; the big one &mdash; you can now wander off the beaten path entirely.</p>
+
+                    <h2>Abilities: More Than Just Attacks</h2>
+                    <p>Units can now have <b>Abilities</b> &mdash; a new category of action, separate from your weapon swings and your spell hand, granted innately by rank, race, or sometimes just who you are. First one out the gate: every Elite or Hero-rank unit (that's your four apprentice heroes) can now cast <b>Summon Portal</b> on its own, conjuring a Generic Portal with no creature attached. Open one up ahead of time and your first real summon of the fight comes through without paying the usual portal toll.</p>
+                    <img
+                            src={AbilityPortal}
+                            alt="Generic Portal ability being cast by a unit"
+                            title="Ability: Summon Portal"
+                            loading="lazy"
+                            style={{ width: '100%', maxWidth: '300px' }}
+                        />
+                    <h2>Smarter Threat</h2>
+                    <p>The way enemies decide who to go after got a full rework. Taking a big hit now draws noticeably more ire than a glancing one &mdash; and landing a solid hit on someone eases off your own aggression toward them a little, instead of grudges only ever building in one direction. Afflictions ratchet up threat with every turn they're active, not just the moment they land. And healing &mdash; as it should &mdash; now draws the most attention of anything you can do. Top off three allies mid-fight and don't be surprised when every nearby enemy suddenly has eyes only for your healer.</p>
+
+                    <h2>The World Grows Grass (Literally)</h2>
+                    <p>Grass tiles aren't just scenery anymore &mdash; they're something you can interact with. The Aetherfluff Beetle picked up a new trick, <b>Consume</b>: let it loose on a patch of grass and it'll eat the tile clean, leaving behind a pinch of Mana Powder for anyone willing to pick it up and cash in a quick 10 MP.</p>
+                    
+                    <h2>Open World: Wander as Far as You Like</h2>
+                    <p>This is the headline feature. A brand-new third mode sits alongside Arena and Debug on the Start Menu: <b>Open World</b>. Pick a hero and step out onto a procedurally generated map that keeps generating as you walk &mdash; cross too far toward any edge and a fresh stretch of terrain streams in to meet you, seamlessly, with the ground you left behind saved exactly as you left it in case you ever turn back around.</p>
+                    <p>No combat waiting out there yet &mdash; this is the foundation for real exploration, with encounters planned for later &mdash; but fog of war is live (you can see about 10 tiles around yourself), and the whole thing is built to never run out of room in any direction. Getting the camera to behave politely while free-looking around a map with no fixed edges turned into its own small saga &mdash; several rounds of &ldquo;okay, NOW is it actually staying in bounds&rdquo; &mdash; but it's in a good, stable place now.</p>
+
+                    <h2>Smaller Things Worth Mentioning</h2>
+                    <ul>
+                        <li>The old flat aggro numbers are gone &mdash; combat should feel a lot more like enemies are reacting to what you're actually doing, not just rolling dice.</li>
+                        <li>A real performance bug in how hex tiles get painted got fixed along the way &mdash; the game should feel noticeably smoother now, Open World especially.</li>
+                    </ul>
+
+                    <p>That's abilities, threat, and the open road covered. Stay tuned, adventurer!</p>
                 </>
             ),
         },

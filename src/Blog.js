@@ -20,11 +20,11 @@ import ItemMenu from './images/Blog/10212026/ItemMenu.png';
 import PortalShot from './images/Blog/10212026/Portal.png';
 import BuffsShot from './images/Blog/10212026/Buffs.png';
 import DamageShot from './images/Blog/10212026/Damage.png';
-import AbilityPortal from '/images/Blog/11032026/AbilityPortal.png';
-import Aggro1 from '/images/Blog/11032026/Aggro1.png';
-import Aggro2 from '/images/Blog/11032026/Aggro2.png';
-import Grass from '/images/Blog/11032026/Grass.png';
-import OpenWorld from '/images/Blog/11032026/OpenWorld.png';
+import AbilityPortal from './images/Blog/11032026/AbilityPortal.png';
+import Aggro1 from './images/Blog/11032026/Aggro1.png';
+import Aggro2 from './images/Blog/11032026/Aggro2.png';
+import Grass from './images/Blog/11032026/Grass.png';
+import OpenWorld from './images/Blog/11032026/OpenWorld.png';
 
 
 
